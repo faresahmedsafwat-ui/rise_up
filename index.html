@@ -1,5 +1,7 @@
 
 
+
+
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
@@ -326,63 +328,51 @@
 
 
 
-  /* ✅ تحسين تنسيق الموقع على الشاشات الصغيرة */
-  @media (max-width: 768px) {
-    header h1,
-    header div {
-      font-size: 2.5rem;
-    }
 
-    .buttons-row {
-      flex-direction: column;
-      gap: 10px;
-    }
 
-    nav.navbar {
-      flex-direction: column;
-      gap: 10px;
-    }
 
-    .about-card {
-      padding: 15px;
-    }
 
-    .about-grid .about-card:last-child {
-      grid-column: span 1 !important;
-      width: 100%;
-      height: auto;
-      padding: 20px;
-    }
-
-    header img {
-      max-width: 100%;
-    }
-
-    .article h2 {
-      font-size: 1.2rem;
-    }
-
-    .article p {
-      font-size: 0.95rem;
-    }
-
-    .contact-form h3 {
-      font-size: 1.2rem;
-    }
-
-    #provinceList {
-      width: 100%;
-    }
-
-    .testimonials-grid {
-      grid-template-columns: 1fr !important;
-    }
-
-    .testimonial-card {
-      padding: 15px;
-    }
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;  /* تصغير الخط */
   }
-</style>
+
+  .buttons-row {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .buttons-row button {
+    width: 100%;  /* تخلي الأزرار بعرض كامل */
+    font-size: 1rem;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr; /* تحط الكروت بشكل عمودي بدل 3 أعمدة */
+    padding: 10px;
+  }
+
+  nav.navbar {
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1rem;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form {
+    max-width: 90%;
+    padding: 15px;
+  }
+}
+
+
+
+
+
+
 
 
 
